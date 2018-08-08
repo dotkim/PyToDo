@@ -10,6 +10,7 @@ def dbconnection():
         return connection
     except:
         print('dberror')
+        print(sys.exc_info())
         #SysL.write(str(datetime.datetime.now()) + " " + str(sys.exc_info()[0]) + '\n')
         return None
 # End of function

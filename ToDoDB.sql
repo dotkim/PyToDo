@@ -1,5 +1,13 @@
 -- ToDo database Build
 -- V1.0
+
+IF NOT EXISTS	(
+					SELECT database_id
+					FROM [master].[sys].[databases] WHERE [name] = 'ToDo'
+				)
+	CREATE DATABASE ToDo;
+GO
+
 USE ToDo;
 GO
 
